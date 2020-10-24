@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/">
+	<soap-env:Header>
+		<eb:MessageHeader xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" eb:version="1.0" soap-env:mustUnderstand="1">
+			<eb:From>
+				<eb:PartyId eb:type="URI">99999</eb:PartyId>
+			</eb:From>
+			<eb:To>
+				<eb:PartyId eb:type="URI">123123</eb:PartyId>
+			</eb:To>
+			<eb:CPAId>IPCC</eb:CPAId>
+			<eb:ConversationId>17-07-2019-102345380440037</eb:ConversationId>
+			<eb:Service>getReservationRQ</eb:Service>
+			<eb:Action>getReservationRQ</eb:Action>
+			<eb:MessageData>
+				<eb:MessageId>2174701587153260611</eb:MessageId>
+				<eb:Timestamp>2020-09-07T16:18:35</eb:Timestamp>
+				<eb:RefToMessageId>1691319482893580610</eb:RefToMessageId>
+			</eb:MessageData>
+		</eb:MessageHeader>
+		<wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext">
+			<wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/ACPCRTC!ICESMSLB\/CRT.LB!1599490518334!1367!261!1!E2E-1</wsse:BinarySecurityToken>
+		</wsse:Security>
+	</soap-env:Header>
+	<soap-env:Body>
+		<stl19:GetReservationRS xmlns:stl19="http://webservices.sabre.com/pnrbuilder/v1_19" xmlns:ns6="http://services.sabre.com/res/orr/v0" xmlns:or114="http://services.sabre.com/res/or/v1_14" xmlns:raw="http://tds.sabre.com/itinerary" xmlns:ns4="http://webservices.sabre.com/pnrconn/ReaccSearch" Version="1.19.0">
+			<stl19:Reservation numberInParty="2" numberOfInfants="1" NumberInSegment="1">
+				<stl19:BookingDetails>
+					<stl19:RecordLocator>HAASPW</stl19:RecordLocator>
+					<stl19:CreationTimestamp>2020-09-07T11:17:00</stl19:CreationTimestamp>
+					<stl19:SystemCreationTimestamp>2020-09-07T11:17:00</stl19:SystemCreationTimestamp>
+					<stl19:CreationAgentID>ADT</stl19:CreationAgentID>
+					<stl19:UpdateTimestamp>2020-09-07T11:17:49</stl19:UpdateTimestamp>
+					<stl19:PNRSequence>1</stl19:PNRSequence>
+					<stl19:FlightsRange Start="2020-12-15T04:32:00" End="2020-12-19T11:04:00"/>
+					<stl19:DivideSplitDetails/>
+					<stl19:EstimatedPurgeTimestamp>2020-12-19T00:00:00</stl19:EstimatedPurgeTimestamp>
+					<stl19:UpdateToken>-70e466186869a1b6e9fc66ca178881d0a7524f77010f6d55</stl19:UpdateToken>
+				</stl19:BookingDetails>
+				<stl19:POS AirExtras="false" InhibitCode="U">
+					<stl19:Source BookingSource="VL4B" AgentSine="ADT" PseudoCityCode="VL4B" ISOCountry="CL" AgentDutyCode="*" AirlineVendorID="AA" HomePseudoCityCode="VL4B" PrimeHostID="1S"/>
+				</stl19:POS>
+				<stl19:PassengerReservation>
+					<stl19:Passengers>
+						<stl19:Passenger id="2" nameType="S" passengerType="ADT" nameId="01.01" nameAssocId="1" withInfant="true" elementId="pnr-2.1">
+							<stl19:LastName>KMAID</stl19:LastName>
+							<stl19:FirstName>RODRIGO</stl19:FirstName>
+							<stl19:SpecialRequests>
+								<stl19:GenericSpecialRequest id="12" type="G" msgType="S">
+									<stl19:Code>INFT</stl19:Code>
+									<stl19:FreeText>/KMAID/LUCAS/03DEC19</stl19:FreeText>
+									<stl19:ActionCode>NN</stl19:ActionCode>
+									<stl19:NumberInParty>1</stl19:NumberInParty>
+									<stl19:AirlineCode>LA</stl19:AirlineCode>
+									<stl19:FullText>INFT LA NN1 SCLIQQ0160O15DEC/KMAID/LUCAS/03DEC19</stl19:FullText>
+								</stl19:GenericSpecialRequest>
+								<stl19:GenericSpecialRequest id="13" type="G" msgType="S">
+									<stl19:Code>INFT</stl19:Code>
+									<stl19:FreeText>/KMAID/LUCAS/03DEC19</stl19:FreeText>
+									<stl19:ActionCode>NN</stl19:ActionCode>
+									<stl19:NumberInParty>1</stl19:NumberInParty>
+									<stl19:AirlineCode>LA</stl19:AirlineCode>
+									<stl19:FullText>INFT LA NN1 IQQSCL0161G19DEC/KMAID/LUCAS/03DEC19</stl19:FullText>
+								</stl19:GenericSpecialRequest>
+								<stl19:APISRequest>
+									<stl19:DOCSEntry id="14" type="G">
+										<stl19:DateOfBirth>1985-08-11</stl19:DateOfBirth>
+										<stl19:Gender>M</stl19:Gender>
+										<stl19:Surname>KMAID</stl19:Surname>
+										<stl19:Forename>RODRIGO</stl19:Forename>
+										<stl19:MiddleName/>
+										<stl19:PrimaryHolder>false</stl19:PrimaryHolder>
+										<stl19:FreeText/>
+										<stl19:ActionCode>HK</stl19:ActionCode>
+										<stl19:NumberInParty>1</stl19:NumberInParty>
+										<stl19:VendorCode>LA</stl19:VendorCode>
+									</stl19:DOCSEntry>
+								</stl19:APISRequest>
+								<stl19:APISRequest>
+									<stl19:DOCSEntry id="15" type="G">
+										<stl19:DateOfBirth>1985-08-11</stl19:DateOfBirth>
+										<stl19:Gender>M</stl19:Gender>
+										<stl19:Surname>KMAID</stl19:Surname>
+										<stl19:Forename>RODRIGO</stl19:Forename>
+										<stl19:MiddleName/>
+										<stl19:PrimaryHolder>false</stl19:PrimaryHolder>
+										<stl19:FreeText/>
+										<stl19:ActionCode>HK</stl19:ActionCode>
+										<stl19:NumberInParty>1</stl19:NumberInParty>
+										<stl19:VendorCode>LA</stl19:VendorCode>
+									</stl19:DOCSEntry>
+								</stl19:APISRequest>
+							</stl19:SpecialRequests>
+							<stl19:Seats/>
+						</stl19:Passenger>
+						<stl19:Passenger id="4" nameType="I" passengerType="INF" nameId="02.01" nameAssocId="2" elementId="pnr-4.2">
+							<stl19:LastName>KMAID</stl19:LastName>
+							<stl19:FirstName>LUCAS</stl19:FirstName>
+							<stl19:SpecialRequests>
+								<stl19:GenericSpecialRequest id="5" type="A" msgType="O">
+									<stl19:FreeText>INF</stl19:FreeText>
+									<stl19:AirlineCode>AA</stl19:AirlineCode>
+									<stl19:FullText>AA INF</stl19:FullText>
+								</stl19:GenericSpecialRequest>
+							</stl19:SpecialRequests>
+							<stl19:Seats/>
+						</stl19:Passenger>
+					</stl19:Passengers>
+					<stl19:Segments>
+						<stl19:Poc>
+							<stl19:Airport>SCL</stl19:Airport>
+							<stl19:Departure>2020-12-15T04:32:00</stl19:Departure>
+						</stl19:Poc>
+						<stl19:Segment sequence="1" id="9">
+							<stl19:Air id="9" sequence="1" segmentAssociationId="2" isPast="false" DayOfWeekInd="2" CodeShare="false" SpecialMeal="false" StopQuantity="00" SmokingAllowed="false" ResBookDesigCode="O" Code="LA">
+								<stl19:DepartureAirport>SCL</stl19:DepartureAirport>
+								<stl19:DepartureAirportCodeContext>IATA</stl19:DepartureAirportCodeContext>
+								<stl19:ArrivalAirport>IQQ</stl19:ArrivalAirport>
+								<stl19:ArrivalAirportCodeContext>IATA</stl19:ArrivalAirportCodeContext>
+								<stl19:OperatingAirlineCode>LA</stl19:OperatingAirlineCode>
+								<stl19:OperatingAirlineShortName>LATAM AIRLINES GROUP</stl19:OperatingAirlineShortName>
+								<stl19:OperatingFlightNumber>0160</stl19:OperatingFlightNumber>
+								<stl19:EquipmentType>320</stl19:EquipmentType>
+								<stl19:MarketingAirlineCode>LA</stl19:MarketingAirlineCode>
+								<stl19:MarketingFlightNumber>0160</stl19:MarketingFlightNumber>
+								<stl19:OperatingClassOfService>O</stl19:OperatingClassOfService>
+								<stl19:MarketingClassOfService>O</stl19:MarketingClassOfService>
+								<stl19:MarriageGrp>
+									<stl19:Ind>0</stl19:Ind>
+									<stl19:Group>0</stl19:Group>
+									<stl19:Sequence>0</stl19:Sequence>
+								</stl19:MarriageGrp>
+								<stl19:Meal Code="G"/>
+								<stl19:Seats/>
+								<stl19:AirlineRefId>DCLA*VGJNCV</stl19:AirlineRefId>
+								<stl19:Eticket>true</stl19:Eticket>
+								<stl19:DepartureDateTime>2020-12-15T04:32:00</stl19:DepartureDateTime>
+								<stl19:ArrivalDateTime>2020-12-15T06:52:00</stl19:ArrivalDateTime>
+								<stl19:FlightNumber>0160</stl19:FlightNumber>
+								<stl19:ClassOfService>O</stl19:ClassOfService>
+								<stl19:ActionCode>HK</stl19:ActionCode>
+								<stl19:NumberInParty>1</stl19:NumberInParty>
+								<stl19:SegmentSpecialRequests>
+									<stl19:GenericSpecialRequest id="12" type="G" msgType="S">
+										<stl19:Code>INFT</stl19:Code>
+										<stl19:FreeText>/KMAID/LUCAS/03DEC19</stl19:FreeText>
+										<stl19:ActionCode>NN</stl19:ActionCode>
+										<stl19:NumberInParty>1</stl19:NumberInParty>
+										<stl19:AirlineCode>LA</stl19:AirlineCode>
+										<stl19:FullText>INFT LA NN1 SCLIQQ0160O15DEC/KMAID/LUCAS/03DEC19</stl19:FullText>
+									</stl19:GenericSpecialRequest>
+									<stl19:GenericSpecialRequest id="14" type="G" msgType="S">
+										<stl19:Code>DOCS</stl19:Code>
+										<stl19:ActionCode>HK</stl19:ActionCode>
+										<stl19:NumberInParty>1</stl19:NumberInParty>
+										<stl19:AirlineCode>LA</stl19:AirlineCode>
+										<stl19:FullText>DOCS LA HK1 SCLIQQ0160O15DEC/DB/11AUG1985/M/KMAID/RODRIGO</stl19:FullText>
+									</stl19:GenericSpecialRequest>
+								</stl19:SegmentSpecialRequests>
+								<stl19:inboundConnection>false</stl19:inboundConnection>
+								<stl19:outboundConnection>false</stl19:outboundConnection>
+								<stl19:ScheduleChangeIndicator>false</stl19:ScheduleChangeIndicator>
+								<stl19:SegmentBookedDate>2020-09-07T11:17:00</stl19:SegmentBookedDate>
+								<stl19:ElapsedTime>02.20</stl19:ElapsedTime>
+								<stl19:AirMilesFlown>0907</stl19:AirMilesFlown>
+								<stl19:FunnelFlight>false</stl19:FunnelFlight>
+								<stl19:ChangeOfGauge>false</stl19:ChangeOfGauge>
+								<stl19:Cabin Code="Y" SabreCode="Y" Name="ECONOMY" ShortName="ECONOMY" Lang="EN"/>
+								<stl19:Banner>MARKETED BY LATAM AIRLINES GROUP</stl19:Banner>
+								<stl19:Informational>false</stl19:Informational>
+							</stl19:Air>
+							<stl19:Product id="9">
+								<or114:ProductDetails productCategory="AIR">
+									<or114:ProductName type="AIR"/>
+									<or114:Air sequence="1" segmentAssociationId="2">
+										<or114:DepartureAirport>SCL</or114:DepartureAirport>
+										<or114:ArrivalAirport>IQQ</or114:ArrivalAirport>
+										<or114:EquipmentType>320</or114:EquipmentType>
+										<or114:MarketingAirlineCode>LA</or114:MarketingAirlineCode>
+										<or114:MarketingFlightNumber>160</or114:MarketingFlightNumber>
+										<or114:MarketingClassOfService>O</or114:MarketingClassOfService>
+										<or114:Cabin code="Y" sabreCode="Y" name="ECONOMY" shortName="ECONOMY" lang="EN"/>
+										<or114:MealCode>G</or114:MealCode>
+										<or114:ElapsedTime>140</or114:ElapsedTime>
+										<or114:AirMilesFlown>907</or114:AirMilesFlown>
+										<or114:FunnelFlight>false</or114:FunnelFlight>
+										<or114:ChangeOfGauge>false</or114:ChangeOfGauge>
+										<or114:DisclosureCarrier Code="LA" DOT="false">
+											<or114:Banner>LATAM AIRLINES GROUP</or114:Banner>
+										</or114:DisclosureCarrier>
+										<or114:AirlineRefId>DCLA*VGJNCV</or114:AirlineRefId>
+										<or114:Eticket>true</or114:Eticket>
+										<or114:DepartureDateTime>2020-12-15T04:32:00</or114:DepartureDateTime>
+										<or114:ArrivalDateTime>2020-12-15T06:52:00</or114:ArrivalDateTime>
+										<or114:FlightNumber>160</or114:FlightNumber>
+										<or114:ClassOfService>O</or114:ClassOfService>
+										<or114:ActionCode>HK</or114:ActionCode>
+										<or114:NumberInParty>1</or114:NumberInParty>
+										<or114:inboundConnection>false</or114:inboundConnection>
+										<or114:outboundConnection>false</or114:outboundConnection>
+										<or114:ScheduleChangeIndicator>false</or114:ScheduleChangeIndicator>
+										<or114:SegmentBookedDate>2020-09-07T11:17:00</or114:SegmentBookedDate>
+									</or114:Air>
+								</or114:ProductDetails>
+							</stl19:Product>
+						</stl19:Segment>
+						<stl19:Segment sequence="2" id="10">
+							<stl19:Air id="10" sequence="2" segmentAssociationId="3" isPast="false" DayOfWeekInd="6" CodeShare="false" SpecialMeal="false" StopQuantity="00" SmokingAllowed="false" ResBookDesigCode="G" Code="LA">
+								<stl19:DepartureAirport>IQQ</stl19:DepartureAirport>
+								<stl19:DepartureAirportCodeContext>IATA</stl19:DepartureAirportCodeContext>
+								<stl19:ArrivalAirport>SCL</stl19:ArrivalAirport>
+								<stl19:ArrivalAirportCodeContext>IATA</stl19:ArrivalAirportCodeContext>
+								<stl19:OperatingAirlineCode>LA</stl19:OperatingAirlineCode>
+								<stl19:OperatingAirlineShortName>LATAM AIRLINES GROUP</stl19:OperatingAirlineShortName>
+								<stl19:OperatingFlightNumber>0161</stl19:OperatingFlightNumber>
+								<stl19:EquipmentType>321</stl19:EquipmentType>
+								<stl19:MarketingAirlineCode>LA</stl19:MarketingAirlineCode>
+								<stl19:MarketingFlightNumber>0161</stl19:MarketingFlightNumber>
+								<stl19:OperatingClassOfService>G</stl19:OperatingClassOfService>
+								<stl19:MarketingClassOfService>G</stl19:MarketingClassOfService>
+								<stl19:MarriageGrp>
+									<stl19:Ind>0</stl19:Ind>
+									<stl19:Group>0</stl19:Group>
+									<stl19:Sequence>0</stl19:Sequence>
+								</stl19:MarriageGrp>
+								<stl19:Meal Code="G"/>
+								<stl19:Seats/>
+								<stl19:AirlineRefId>DCLA*VGJNCV</stl19:AirlineRefId>
+								<stl19:Eticket>true</stl19:Eticket>
+								<stl19:DepartureDateTime>2020-12-19T08:50:00</stl19:DepartureDateTime>
+								<stl19:ArrivalDateTime>2020-12-19T11:04:00</stl19:ArrivalDateTime>
+								<stl19:FlightNumber>0161</stl19:FlightNumber>
+								<stl19:ClassOfService>G</stl19:ClassOfService>
+								<stl19:ActionCode>HK</stl19:ActionCode>
+								<stl19:NumberInParty>1</stl19:NumberInParty>
+								<stl19:SegmentSpecialRequests>
+									<stl19:GenericSpecialRequest id="13" type="G" msgType="S">
+										<stl19:Code>INFT</stl19:Code>
+										<stl19:FreeText>/KMAID/LUCAS/03DEC19</stl19:FreeText>
+										<stl19:ActionCode>NN</stl19:ActionCode>
+										<stl19:NumberInParty>1</stl19:NumberInParty>
+										<stl19:AirlineCode>LA</stl19:AirlineCode>
+										<stl19:FullText>INFT LA NN1 IQQSCL0161G19DEC/KMAID/LUCAS/03DEC19</stl19:FullText>
+									</stl19:GenericSpecialRequest>
+									<stl19:GenericSpecialRequest id="15" type="G" msgType="S">
+										<stl19:Code>DOCS</stl19:Code>
+										<stl19:ActionCode>HK</stl19:ActionCode>
+										<stl19:NumberInParty>1</stl19:NumberInParty>
+										<stl19:AirlineCode>LA</stl19:AirlineCode>
+										<stl19:FullText>DOCS LA HK1 IQQSCL0161G19DEC/DB/11AUG1985/M/KMAID/RODRIGO</stl19:FullText>
+									</stl19:GenericSpecialRequest>
+								</stl19:SegmentSpecialRequests>
+								<stl19:inboundConnection>false</stl19:inboundConnection>
+								<stl19:outboundConnection>false</stl19:outboundConnection>
+								<stl19:ScheduleChangeIndicator>false</stl19:ScheduleChangeIndicator>
+								<stl19:SegmentBookedDate>2020-09-07T11:17:00</stl19:SegmentBookedDate>
+								<stl19:ElapsedTime>02.14</stl19:ElapsedTime>
+								<stl19:AirMilesFlown>0907</stl19:AirMilesFlown>
+								<stl19:FunnelFlight>false</stl19:FunnelFlight>
+								<stl19:ChangeOfGauge>false</stl19:ChangeOfGauge>
+								<stl19:Cabin Code="Y" SabreCode="Y" Name="ECONOMY" ShortName="ECONOMY" Lang="EN"/>
+								<stl19:Banner>MARKETED BY LATAM AIRLINES GROUP</stl19:Banner>
+								<stl19:Informational>false</stl19:Informational>
+							</stl19:Air>
+							<stl19:Product id="10">
+								<or114:ProductDetails productCategory="AIR">
+									<or114:ProductName type="AIR"/>
+									<or114:Air sequence="2" segmentAssociationId="3">
+										<or114:DepartureAirport>IQQ</or114:DepartureAirport>
+										<or114:ArrivalAirport>SCL</or114:ArrivalAirport>
+										<or114:EquipmentType>321</or114:EquipmentType>
+										<or114:MarketingAirlineCode>LA</or114:MarketingAirlineCode>
+										<or114:MarketingFlightNumber>161</or114:MarketingFlightNumber>
+										<or114:MarketingClassOfService>G</or114:MarketingClassOfService>
+										<or114:Cabin code="Y" sabreCode="Y" name="ECONOMY" shortName="ECONOMY" lang="EN"/>
+										<or114:MealCode>G</or114:MealCode>
+										<or114:ElapsedTime>134</or114:ElapsedTime>
+										<or114:AirMilesFlown>907</or114:AirMilesFlown>
+										<or114:FunnelFlight>false</or114:FunnelFlight>
+										<or114:ChangeOfGauge>false</or114:ChangeOfGauge>
+										<or114:DisclosureCarrier Code="LA" DOT="false">
+											<or114:Banner>LATAM AIRLINES GROUP</or114:Banner>
+										</or114:DisclosureCarrier>
+										<or114:AirlineRefId>DCLA*VGJNCV</or114:AirlineRefId>
+										<or114:Eticket>true</or114:Eticket>
+										<or114:DepartureDateTime>2020-12-19T08:50:00</or114:DepartureDateTime>
+										<or114:ArrivalDateTime>2020-12-19T11:04:00</or114:ArrivalDateTime>
+										<or114:FlightNumber>161</or114:FlightNumber>
+										<or114:ClassOfService>G</or114:ClassOfService>
+										<or114:ActionCode>HK</or114:ActionCode>
+										<or114:NumberInParty>1</or114:NumberInParty>
+										<or114:inboundConnection>false</or114:inboundConnection>
+										<or114:outboundConnection>false</or114:outboundConnection>
+										<or114:ScheduleChangeIndicator>false</or114:ScheduleChangeIndicator>
+										<or114:SegmentBookedDate>2020-09-07T11:17:00</or114:SegmentBookedDate>
+									</or114:Air>
+								</or114:ProductDetails>
+							</stl19:Product>
+						</stl19:Segment>
+					</stl19:Segments>
+					<stl19:TicketingInfo>
+						<stl19:FutureTicketing id="7" index="1" elementId="pnr-7">
+							<stl19:Code>TAW</stl19:Code>
+							<stl19:Comment>*</stl19:Comment>
+						</stl19:FutureTicketing>
+					</stl19:TicketingInfo>
+					<stl19:ItineraryPricing/>
+				</stl19:PassengerReservation>
+				<stl19:ReceivedFrom>
+					<stl19:Name>RK</stl19:Name>
+				</stl19:ReceivedFrom>
+				<stl19:PhoneNumbers>
+					<stl19:PhoneNumber id="8" index="1" elementId="pnr-8">
+						<stl19:CityCode>SCL</stl19:CityCode>
+						<stl19:Number>111111111111</stl19:Number>
+					</stl19:PhoneNumber>
+				</stl19:PhoneNumbers>
+				<stl19:EmailAddresses/>
+				<stl19:OpenReservationElements>
+					<or114:OpenReservationElement id="5" type="SRVC" elementId="pnr-5">
+						<or114:ServiceRequest airlineCode="AA" serviceType="OSI" ssrType="AFX">
+							<or114:FreeText>INF</or114:FreeText>
+							<or114:FullText>AA INF</or114:FullText>
+						</or114:ServiceRequest>
+						<or114:NameAssociation>
+							<or114:LastName>KMAID</or114:LastName>
+							<or114:FirstName>LUCAS</or114:FirstName>
+							<or114:ReferenceId>2</or114:ReferenceId>
+							<or114:NameRefNumber>02.01</or114:NameRefNumber>
+						</or114:NameAssociation>
+					</or114:OpenReservationElement>
+					<or114:OpenReservationElement id="12" type="SRVC" elementId="pnr-12">
+						<or114:ServiceRequest actionCode="NN" airlineCode="LA" code="INFT" serviceCount="1" serviceType="SSR" ssrType="GFX">
+							<or114:FreeText>/KMAID/LUCAS/03DEC19</or114:FreeText>
+							<or114:FullText>INFT LA NN1 SCLIQQ0160O15DEC/KMAID/LUCAS/03DEC19</or114:FullText>
+						</or114:ServiceRequest>
+						<or114:SegmentAssociation Id="9" SegmentAssociationId="2">
+							<or114:AirSegment>
+								<or114:CarrierCode>LA</or114:CarrierCode>
+								<or114:FlightNumber>0160</or114:FlightNumber>
+								<or114:DepartureDate>2020-12-15</or114:DepartureDate>
+								<or114:BoardPoint>SCL</or114:BoardPoint>
+								<or114:OffPoint>IQQ</or114:OffPoint>
+								<or114:ClassOfService>O</or114:ClassOfService>
+							</or114:AirSegment>
+						</or114:SegmentAssociation>
+						<or114:NameAssociation>
+							<or114:LastName>KMAID</or114:LastName>
+							<or114:FirstName>RODRIGO</or114:FirstName>
+							<or114:ReferenceId>1</or114:ReferenceId>
+							<or114:NameRefNumber>01.01</or114:NameRefNumber>
+						</or114:NameAssociation>
+					</or114:OpenReservationElement>
+					<or114:OpenReservationElement id="13" type="SRVC" elementId="pnr-13">
+						<or114:ServiceRequest actionCode="NN" airlineCode="LA" code="INFT" serviceCount="1" serviceType="SSR" ssrType="GFX">
+							<or114:FreeText>/KMAID/LUCAS/03DEC19</or114:FreeText>
+							<or114:FullText>INFT LA NN1 IQQSCL0161G19DEC/KMAID/LUCAS/03DEC19</or114:FullText>
+						</or114:ServiceRequest>
+						<or114:SegmentAssociation Id="10" SegmentAssociationId="3">
+							<or114:AirSegment>
+								<or114:CarrierCode>LA</or114:CarrierCode>
+								<or114:FlightNumber>0161</or114:FlightNumber>
+								<or114:DepartureDate>2020-12-19</or114:DepartureDate>
+								<or114:BoardPoint>IQQ</or114:BoardPoint>
+								<or114:OffPoint>SCL</or114:OffPoint>
+								<or114:ClassOfService>G</or114:ClassOfService>
+							</or114:AirSegment>
+						</or114:SegmentAssociation>
+						<or114:NameAssociation>
+							<or114:LastName>KMAID</or114:LastName>
+							<or114:FirstName>RODRIGO</or114:FirstName>
+							<or114:ReferenceId>1</or114:ReferenceId>
+							<or114:NameRefNumber>01.01</or114:NameRefNumber>
+						</or114:NameAssociation>
+					</or114:OpenReservationElement>
+					<or114:OpenReservationElement id="14" type="SRVC" elementId="pnr-14">
+						<or114:ServiceRequest actionCode="HK" airlineCode="LA" code="DOCS" serviceCount="1" serviceType="SSR" ssrType="GFX">
+							<or114:FreeText>/DB/11AUG1985/M/KMAID/RODRIGO</or114:FreeText>
+							<or114:FullText>DOCS LA HK1 SCLIQQ0160O15DEC/DB/11AUG1985/M/KMAID/RODRIGO</or114:FullText>
+							<or114:TravelDocument>
+								<or114:Type>DB</or114:Type>
+								<or114:DateOfBirth>11AUG1985</or114:DateOfBirth>
+								<or114:Gender>M</or114:Gender>
+								<or114:LastName>KMAID</or114:LastName>
+								<or114:FirstName>RODRIGO</or114:FirstName>
+								<or114:Infant>false</or114:Infant>
+								<or114:HasDocumentData>false</or114:HasDocumentData>
+							</or114:TravelDocument>
+						</or114:ServiceRequest>
+						<or114:SegmentAssociation Id="9" SegmentAssociationId="2">
+							<or114:AirSegment>
+								<or114:CarrierCode>LA</or114:CarrierCode>
+								<or114:FlightNumber>0160</or114:FlightNumber>
+								<or114:DepartureDate>2020-12-15</or114:DepartureDate>
+								<or114:BoardPoint>SCL</or114:BoardPoint>
+								<or114:OffPoint>IQQ</or114:OffPoint>
+								<or114:ClassOfService>O</or114:ClassOfService>
+							</or114:AirSegment>
+						</or114:SegmentAssociation>
+						<or114:NameAssociation>
+							<or114:LastName>KMAID</or114:LastName>
+							<or114:FirstName>RODRIGO</or114:FirstName>
+							<or114:ReferenceId>1</or114:ReferenceId>
+							<or114:NameRefNumber>01.01</or114:NameRefNumber>
+						</or114:NameAssociation>
+					</or114:OpenReservationElement>
+					<or114:OpenReservationElement id="15" type="SRVC" elementId="pnr-15">
+						<or114:ServiceRequest actionCode="HK" airlineCode="LA" code="DOCS" serviceCount="1" serviceType="SSR" ssrType="GFX">
+							<or114:FreeText>/DB/11AUG1985/M/KMAID/RODRIGO</or114:FreeText>
+							<or114:FullText>DOCS LA HK1 IQQSCL0161G19DEC/DB/11AUG1985/M/KMAID/RODRIGO</or114:FullText>
+							<or114:TravelDocument>
+								<or114:Type>DB</or114:Type>
+								<or114:DateOfBirth>11AUG1985</or114:DateOfBirth>
+								<or114:Gender>M</or114:Gender>
+								<or114:LastName>KMAID</or114:LastName>
+								<or114:FirstName>RODRIGO</or114:FirstName>
+								<or114:Infant>false</or114:Infant>
+								<or114:HasDocumentData>false</or114:HasDocumentData>
+							</or114:TravelDocument>
+						</or114:ServiceRequest>
+						<or114:SegmentAssociation Id="10" SegmentAssociationId="3">
+							<or114:AirSegment>
+								<or114:CarrierCode>LA</or114:CarrierCode>
+								<or114:FlightNumber>0161</or114:FlightNumber>
+								<or114:DepartureDate>2020-12-19</or114:DepartureDate>
+								<or114:BoardPoint>IQQ</or114:BoardPoint>
+								<or114:OffPoint>SCL</or114:OffPoint>
+								<or114:ClassOfService>G</or114:ClassOfService>
+							</or114:AirSegment>
+						</or114:SegmentAssociation>
+						<or114:NameAssociation>
+							<or114:LastName>KMAID</or114:LastName>
+							<or114:FirstName>RODRIGO</or114:FirstName>
+							<or114:ReferenceId>1</or114:ReferenceId>
+							<or114:NameRefNumber>01.01</or114:NameRefNumber>
+						</or114:NameAssociation>
+					</or114:OpenReservationElement>
+				</stl19:OpenReservationElements>
+			</stl19:Reservation>
+			<or114:PriceQuote>
+				<PriceQuoteInfo xmlns="http://www.sabre.com/ns/Ticketing/pqs/1.0">
+					<Reservation updateToken="eNc:::pM5CVMQ6qIHaC2iCRtSAYQ=="/>
+					<Summary>
+						<NameAssociation firstName="RODRIGO" lastName="KMAID" nameId="1" nameNumber="1.1">
+							<PriceQuote latestPQFlag="true" number="1" pricingType="S" status="A" type="PQ">
+								<Indicators segmentSelect="true"/>
+								<Passenger passengerTypeCount="1" requestedType="ADT" type="ADT"/>
+								<ItineraryType>D</ItineraryType>
+								<ValidatingCarrier>LA</ValidatingCarrier>
+								<Amounts>
+									<Total currencyCode="CLP">49288</Total>
+								</Amounts>
+								<LocalCreateDateTime>2020-09-07T13:15:00</LocalCreateDateTime>
+							</PriceQuote>
+						</NameAssociation>
+						<NameAssociation firstName="LUCAS" lastName="I/1KMAID" nameId="2" nameNumber="2.1">
+							<PriceQuote latestPQFlag="true" number="2" pricingType="S" status="A" type="PQ">
+								<Indicators segmentSelect="true"/>
+								<Passenger passengerTypeCount="1" requestedType="INF" type="INF"/>
+								<ItineraryType>D</ItineraryType>
+								<TicketDesignator>IN</TicketDesignator>
+								<ValidatingCarrier>LA</ValidatingCarrier>
+								<Amounts>
+									<Total currencyCode="CLP">0</Total>
+								</Amounts>
+								<LocalCreateDateTime>2020-09-07T13:15:00</LocalCreateDateTime>
+							</PriceQuote>
+						</NameAssociation>
+					</Summary>
+					<Details number="1" passengerType="ADT" pricingType="S" status="A" type="PQ">
+						<AgentInfo duty="*" sine="ADT">
+							<HomeLocation>VL4B</HomeLocation>
+							<WorkLocation>VL4B</WorkLocation>
+						</AgentInfo>
+						<TransactionInfo>
+							<CreateDateTime>2020-09-07T11:15:00</CreateDateTime>
+							<UpdateDateTime>2020-09-07T11:15:00</UpdateDateTime>
+							<LastDateToPurchase>2020-09-08T01:15:00</LastDateToPurchase>
+							<LocalCreateDateTime>2020-09-07T13:15:00</LocalCreateDateTime>
+							<LocalUpdateDateTime>2020-09-07T13:15:00</LocalUpdateDateTime>
+							<InputEntry>WPS1*BRQP$S2*BRQP$P1ADT/1INF$RQ</InputEntry>
+						</TransactionInfo>
+						<NameAssociationInfo firstName="RODRIGO" lastName="KMAID" nameId="1" nameNumber="1.1"/>
+						<SegmentInfo number="1" segmentStatus="OK">
+							<Flight connectionIndicator="O">
+								<MarketingFlight number="160">LA</MarketingFlight>
+								<ClassOfService>O</ClassOfService>
+								<Departure>
+									<DateTime>2020-12-15T04:32:00</DateTime>
+									<CityCode name="SANTIAGO      SCL">SCL</CityCode>
+								</Departure>
+								<Arrival>
+									<DateTime>2020-12-15T06:52:00</DateTime>
+									<CityCode name="IQUIQUE">IQQ</CityCode>
+								</Arrival>
+							</Flight>
+							<FareBasis>O00QP5ZI</FareBasis>
+							<NotValidAfter>2021-12-15</NotValidAfter>
+							<Baggage allowance="NI" type="N"/>
+						</SegmentInfo>
+						<SegmentInfo number="2" segmentStatus="OK">
+							<Flight connectionIndicator="O">
+								<MarketingFlight number="161">LA</MarketingFlight>
+								<ClassOfService>G</ClassOfService>
+								<Departure>
+									<DateTime>2020-12-19T08:50:00</DateTime>
+									<CityCode name="IQUIQUE">IQQ</CityCode>
+								</Departure>
+								<Arrival>
+									<DateTime>2020-12-19T11:04:00</DateTime>
+									<CityCode name="SANTIAGO      SCL">SCL</CityCode>
+								</Arrival>
+							</Flight>
+							<FareBasis>G00QP5ZI</FareBasis>
+							<NotValidAfter>2021-12-15</NotValidAfter>
+							<Baggage allowance="NI" type="N"/>
+						</SegmentInfo>
+						<FareInfo source="ATPC">
+							<FareIndicators/>
+							<BaseFare currencyCode="CLP">37990</BaseFare>
+							<TotalTax currencyCode="CLP">11298</TotalTax>
+							<TotalFare currencyCode="CLP">49288</TotalFare>
+							<TaxInfo>
+								<CombinedTax code="CL">
+									<Amount currencyCode="CLP">11298</Amount>
+								</CombinedTax>
+								<Tax code="CL">
+									<Amount currencyCode="CLP">11298</Amount>
+								</Tax>
+							</TaxInfo>
+							<FareCalculation>SCL LA IQQ20000LA SCL17990CLP37990END</FareCalculation>
+							<FareComponent fareBasisCode="O00QP5ZI" number="1">
+								<FlightSegmentNumbers>
+									<SegmentNumber>1</SegmentNumber>
+								</FlightSegmentNumbers>
+								<FareDirectionality roundTrip="true"/>
+								<Departure>
+									<DateTime>2020-12-15T04:32:00</DateTime>
+									<CityCode name="SANTIAGO      SCL">SCL</CityCode>
+								</Departure>
+								<Arrival>
+									<DateTime>2020-12-15T06:52:00</DateTime>
+									<CityCode name="IQUIQUE">IQQ</CityCode>
+								</Arrival>
+								<Amount currencyCode="CLP" decimalPlace="0">20000</Amount>
+								<GoverningCarrier>LA</GoverningCarrier>
+							</FareComponent>
+							<FareComponent fareBasisCode="G00QP5ZI" number="2">
+								<FlightSegmentNumbers>
+									<SegmentNumber>2</SegmentNumber>
+								</FlightSegmentNumbers>
+								<FareDirectionality inbound="true" roundTrip="true"/>
+								<Departure>
+									<DateTime>2020-12-19T08:50:00</DateTime>
+									<CityCode name="IQUIQUE">IQQ</CityCode>
+								</Departure>
+								<Arrival>
+									<DateTime>2020-12-19T11:04:00</DateTime>
+									<CityCode name="SANTIAGO      SCL">SCL</CityCode>
+								</Arrival>
+								<Amount currencyCode="CLP" decimalPlace="0">17990</Amount>
+								<GoverningCarrier>LA</GoverningCarrier>
+							</FareComponent>
+						</FareInfo>
+						<MiscellaneousInfo>
+							<ValidatingCarrier>LA</ValidatingCarrier>
+							<ItineraryType>D</ItineraryType>
+						</MiscellaneousInfo>
+						<MessageInfo>
+							<Message number="201" type="WARNING">Fare not guaranteed until ticketed</Message>
+							<Message type="WARNING">VALIDATING CARRIER - LA</Message>
+							<Message type="WARNING">CAT 15 SALES RESTRICTIONS FREE TEXT FOUND - VERIFY RULES</Message>
+							<Remarks type="ENS">NONREF/CHNGS NOT PERMITTED</Remarks>
+							<PricingParameters>WPS1*BRQP$S2*BRQP$P1ADT/1INF$RQ</PricingParameters>
+						</MessageInfo>
+						<HistoryInfo>
+							<AgentInfo sine="ADT">
+								<HomeLocation>VL4B</HomeLocation>
+							</AgentInfo>
+							<TransactionInfo>
+								<LocalDateTime>2020-09-07T13:15:00</LocalDateTime>
+								<InputEntry>WPS1*BRQP$S2*BRQP$P1ADT/1INF$RQ</InputEntry>
+							</TransactionInfo>
+						</HistoryInfo>
+					</Details>
+					<Details number="2" passengerType="INF" pricingType="S" status="A" type="PQ">
+						<AgentInfo duty="*" sine="ADT">
+							<HomeLocation>VL4B</HomeLocation>
+							<WorkLocation>VL4B</WorkLocation>
+						</AgentInfo>
+						<TransactionInfo>
+							<CreateDateTime>2020-09-07T11:15:00</CreateDateTime>
+							<UpdateDateTime>2020-09-07T11:15:00</UpdateDateTime>
+							<LastDateToPurchase>2020-09-08T01:15:00</LastDateToPurchase>
+							<LocalCreateDateTime>2020-09-07T13:15:00</LocalCreateDateTime>
+							<LocalUpdateDateTime>2020-09-07T13:15:00</LocalUpdateDateTime>
+							<InputEntry>WPS1*BRQP$S2*BRQP$P1ADT/1INF$RQ</InputEntry>
+						</TransactionInfo>
+						<NameAssociationInfo firstName="LUCAS" lastName="I/1KMAID" nameId="2" nameNumber="2.1"/>
+						<SegmentInfo number="1" segmentStatus="NS">
+							<Flight connectionIndicator="O">
+								<MarketingFlight number="160">LA</MarketingFlight>
+								<ClassOfService>O</ClassOfService>
+								<Departure>
+									<DateTime>2020-12-15T04:32:00</DateTime>
+									<CityCode name="SANTIAGO      SCL">SCL</CityCode>
+								</Departure>
+								<Arrival>
+									<DateTime>2020-12-15T06:52:00</DateTime>
+									<CityCode name="IQUIQUE">IQQ</CityCode>
+								</Arrival>
+							</Flight>
+							<FareBasis>O00QP5ZI/IN</FareBasis>
+							<NotValidAfter>2021-12-15</NotValidAfter>
+							<Baggage allowance="NI" type="N"/>
+						</SegmentInfo>
+						<SegmentInfo number="2" segmentStatus="NS">
+							<Flight connectionIndicator="O">
+								<MarketingFlight number="161">LA</MarketingFlight>
+								<ClassOfService>G</ClassOfService>
+								<Departure>
+									<DateTime>2020-12-19T08:50:00</DateTime>
+									<CityCode name="IQUIQUE">IQQ</CityCode>
+								</Departure>
+								<Arrival>
+									<DateTime>2020-12-19T11:04:00</DateTime>
+									<CityCode name="SANTIAGO      SCL">SCL</CityCode>
+								</Arrival>
+							</Flight>
+							<FareBasis>G00QP5ZI/IN</FareBasis>
+							<NotValidAfter>2021-12-15</NotValidAfter>
+							<Baggage allowance="NI" type="N"/>
+						</SegmentInfo>
+						<FareInfo source="ATPC">
+							<FareIndicators/>
+							<BaseFare currencyCode="CLP">0</BaseFare>
+							<TotalTax currencyCode="CLP">0</TotalTax>
+							<TotalFare currencyCode="CLP">0</TotalFare>
+							<FareCalculation>SCL LA IQQ0LA SCL0CLP0END</FareCalculation>
+							<FareComponent fareBasisCode="O00QP5ZI/IN" number="1">
+								<FlightSegmentNumbers>
+									<SegmentNumber>1</SegmentNumber>
+								</FlightSegmentNumbers>
+								<FareDirectionality roundTrip="true"/>
+								<Departure>
+									<DateTime>2020-12-15T04:32:00</DateTime>
+									<CityCode name="SANTIAGO      SCL">SCL</CityCode>
+								</Departure>
+								<Arrival>
+									<DateTime>2020-12-15T06:52:00</DateTime>
+									<CityCode name="IQUIQUE">IQQ</CityCode>
+								</Arrival>
+								<GoverningCarrier>LA</GoverningCarrier>
+								<TicketDesignator>IN</TicketDesignator>
+							</FareComponent>
+							<FareComponent fareBasisCode="G00QP5ZI/IN" number="2">
+								<FlightSegmentNumbers>
+									<SegmentNumber>2</SegmentNumber>
+								</FlightSegmentNumbers>
+								<FareDirectionality inbound="true" roundTrip="true"/>
+								<Departure>
+									<DateTime>2020-12-19T08:50:00</DateTime>
+									<CityCode name="IQUIQUE">IQQ</CityCode>
+								</Departure>
+								<Arrival>
+									<DateTime>2020-12-19T11:04:00</DateTime>
+									<CityCode name="SANTIAGO      SCL">SCL</CityCode>
+								</Arrival>
+								<GoverningCarrier>LA</GoverningCarrier>
+								<TicketDesignator>IN</TicketDesignator>
+							</FareComponent>
+						</FareInfo>
+						<MiscellaneousInfo>
+							<ValidatingCarrier>LA</ValidatingCarrier>
+							<ItineraryType>D</ItineraryType>
+						</MiscellaneousInfo>
+						<MessageInfo>
+							<Message number="201" type="WARNING">Fare not guaranteed until ticketed</Message>
+							<Message type="WARNING">REQUIRES ACCOMPANYING ADT PASSENGER</Message>
+							<Message type="WARNING">EACH INF REQUIRES ACCOMPANYING ADT PASSENGER</Message>
+							<Message type="WARNING">VALIDATING CARRIER - LA</Message>
+							<Message type="WARNING">CAT 15 SALES RESTRICTIONS FREE TEXT FOUND - VERIFY RULES</Message>
+							<Remarks type="ENS">NONREF/CHNGS NOT PERMITTED</Remarks>
+							<PricingParameters>WPS1*BRQP$S2*BRQP$P1ADT/1INF$RQ</PricingParameters>
+						</MessageInfo>
+						<HistoryInfo>
+							<AgentInfo sine="ADT">
+								<HomeLocation>VL4B</HomeLocation>
+							</AgentInfo>
+							<TransactionInfo>
+								<LocalDateTime>2020-09-07T13:15:00</LocalDateTime>
+								<InputEntry>WPS1*BRQP$S2*BRQP$P1ADT/1INF$RQ</InputEntry>
+							</TransactionInfo>
+						</HistoryInfo>
+					</Details>
+				</PriceQuoteInfo>
+			</or114:PriceQuote>
+		</stl19:GetReservationRS>
+	</soap-env:Body>
+</soap-env:Envelope>
