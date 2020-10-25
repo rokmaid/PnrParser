@@ -6,6 +6,7 @@ from logger import writeLine
 
 def getBody(pcc):
 
+
     return """
       <SOAP-ENV:Body>
     <SessionCloseRQ>
