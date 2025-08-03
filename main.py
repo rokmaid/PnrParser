@@ -10,7 +10,7 @@ from requests import HTTPError ,Timeout
 import os 
 
 def main():
-    os.chdir("./PNRParser")
+   # os.chdir("./PNRParser")
     f = open("logger.txt", "w")
     
     recloc = input("Enter Rec Loc ") 
@@ -22,7 +22,7 @@ def main():
     payload=getReservation.getPayload(token,recloc) 
     #print(payload)
     try:
-        url = "https://sws-crt.cert.havail.sabre.com" ; 
+        url = "https://webservices.cert.platform.sabre.com" ; 
      
         headerData={
 
@@ -46,9 +46,9 @@ def getUrl(token):
   
   # Check if the token is from CERT or Res and return the Url acordingly
   if(token.find("CRT")!=-1):
-       return "https://sws-crt.cert.havail.sabre.com" 
+       return "https://webservices.cert.platform.sabre.com" 
   elif (token.find("RES")!=-1) :
-       return "https://webservices.havail.sabre.com"    
+       return "https://webservices.platform.sabre.com"    
 
   
 main()     
